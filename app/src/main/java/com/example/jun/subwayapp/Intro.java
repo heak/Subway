@@ -1,11 +1,12 @@
 package com.example.jun.subwayapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Intro extends AppCompatActivity {
+public class Intro extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
