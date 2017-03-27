@@ -1,5 +1,6 @@
 package com.example.jun.subwayapp;
 
+import android.media.Image;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -12,18 +13,20 @@ import android.support.v7.widget.Toolbar;
 
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 public class TestActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    //추가내용
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -33,6 +36,7 @@ public class TestActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override

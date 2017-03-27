@@ -7,9 +7,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@android:style/Theme.NoTitleBar">
-        <activity android:name=".Intro">
+        android:supportsRtl="true">
+
+        <activity android:name=".Intro"
+            android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
