@@ -12,9 +12,12 @@ import android.support.v7.widget.Toolbar;
 
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 public class TestActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

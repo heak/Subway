@@ -22,26 +22,24 @@
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
-
-        <EditText
-            android:id="@+id/editText"
+        android:layout_height="match_parent">
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:hint="edittext 넣을 자리" />
+            android:layout_height="match_parent"
+            android:id="@+id/RouteMap"
+            android:src="@drawable/subway_route"
+            android:scaleType="centerCrop"/>
 
         <TextView
-            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="힘내자 혁준찡"/>
-
-
-    </LinearLayout>
+            android:gravity="center"
+            android:text="힘내자 혁준찡"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
 </android.support.v4.widget.DrawerLayout>
