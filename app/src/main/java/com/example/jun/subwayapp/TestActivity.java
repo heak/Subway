@@ -14,17 +14,21 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import uk.co.senab.photoview.PhotoViewAttacher;
+
 public class TestActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ImageView imageView;
-
+    PhotoViewAttacher attacher;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        ImageView iv = (ImageView)findViewById(R.id.RouteMap);
+        attacher = new PhotoViewAttacher(iv);
 
 
 
@@ -61,7 +65,19 @@ public class TestActivity extends AppCompatActivity
 
         } else if (id == R.id.t3) {
 
+        }else if (id == R.id.t4) {
+
         }
+        else if (id == R.id.t5) {
+
+        }
+        else if (id == R.id.t6) {
+
+        }
+        else if (id == R.id.t7) {
+
+        }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
